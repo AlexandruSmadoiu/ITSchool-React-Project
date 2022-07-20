@@ -1,7 +1,10 @@
 import { InputField } from './components/InputField/InputField';
+import { Button} from './components/Buttons/Button';
 function App() {
   return (
-    <InputField wasClicked={console.log}/>
+    <div>
+      <Button>Hello</Button>
+    </div>    
   );
 }
 

@@ -1,0 +1,8 @@
+.button--primary--solid{
+    background-color: #745af2;
+    color: #ffffff;
+    border: none;
+}
+button--primary--solid:hover{
+    background-color: #745af9;
+}
