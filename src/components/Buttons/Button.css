@@ -1,8 +1,154 @@
+/* Button */
+.btn{
+    font-family: "montserrat", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Button */
+
+/* Button Solid */
+
 .button--primary--solid{
     background-color: #745af2;
     color: #ffffff;
     border: none;
 }
-button--primary--solid:hover{
-    background-color: #745af9;
+.button--primary--solid:hover{
+    background-color: #634dce;
 }
+
+.button--secondary--solid{
+    background-color: #545b62;
+    color: #ffffff;
+    border: none;
+}
+.button--secondary--solid:hover{
+    background-color: #474d53;
+}
+
+.button--success--solid{
+    background-color: #06d79c;
+    color: #ffffff;
+    border: none;
+}
+.button--success--solid:hover{
+    background-color: #05b785;
+}
+
+.button--info--solid{
+    background-color: #398bf7;
+    color: #ffffff;
+    border: none;
+}
+
+.button--info--solid:hover{
+    background-color: #3076d2;
+}
+
+.button--warning--solid{
+    background-color: #ffb22b;
+    color: #ffffff;
+    border: none;
+}
+
+.button--warning--solid:hover{
+    background-color: #d99725;
+}
+
+.button--danger--solid{
+    background-color: #ef5350;
+    color: #ffffff;
+    border: none;
+}
+
+.button--danger--solid:hover{
+    background-color: #cb4744;
+}
+
+/* Button Solid */
+
+/* Button Outline */
+
+.button--primary--outline{
+    background-color: transparent;
+    color: #745af2;
+    border: 1px solid #745af2;
+}
+.button--primary--outline:hover{
+    background-color: #745af2;
+    color: #ffffff;
+}
+
+.button--secondary--outline{
+    background-color: transparent;
+    color: #545b62;
+    border: 1px solid #545b62;
+}
+.button--secondary--outline:hover{
+    background-color: #545b62;
+    color: #ffffff;
+}
+
+.button--success--outline{
+    background-color: transparent;
+    color: #06d79c;
+    border: 1px solid #06d79c;
+}
+.button--success--outline:hover{
+    background-color: #06d79c;
+    color: #ffffff;
+}
+
+.button--info--outline{
+    background-color: transparent;
+    color: #398bf7;
+    border: 1px solid #398bf7;
+}
+
+.button--info--outline:hover{
+    background-color: #398bf7;
+    color: #ffffff;
+}
+
+.button--warning--outline{
+    background-color: transparent;
+    color:  #ffb22b;
+    border: 1px solid  #ffb22b;
+}
+
+.button--warning--outline:hover{
+    background-color:  #ffb22b;
+    color: #ffffff;
+}
+
+.button--danger--outline{
+    background-color: transparent;
+    color:  #ef5350;
+    border: 1px solid  #ef5350;
+}
+
+.button--danger--outline:hover{
+    background-color:  #ef5350;
+    color: #ffffff;
+}
+
+/* Button Outline */
+
+/* Button Size */
+
+.button--small{
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.button--medium{
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.button--large{
+    padding: 8px 16px;
+    font-size: 17px;
+}
+
+/* Button Size */
