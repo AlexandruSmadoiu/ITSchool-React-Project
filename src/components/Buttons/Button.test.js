@@ -14,3 +14,7 @@ test('Button click', () => {
   expect(handleOnClick).toBeCalled();
 });
 
+test("render corect whit prooper classes", ()=>{
+  const {queryByTestId} = render(<Button buttonSize="button--large"/>);
+    expect(queryByTestId('click-button')).toHaveClass('button--large');
+})
