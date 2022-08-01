@@ -1,24 +1,16 @@
-import { render } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import { Button } from './Button'
 
-it('render a button primary', () => {
-    render(<Button />)
-  })
+  test('Button renders correctly', () => {
+    const {queryByTestId} = render(<Button/>);
+    expect(queryByTestId('click-button')).toBeTruthy();
+});
 
-it('render a button children', () => {
-    render(<Button>
-        Hello World
-    </Button>)
-  })
+test('Button click', () => {
+  const handleOnClick = jest.fn();
+  const {queryByTestId} = render(<Button handleOnClick={handleOnClick}/>);
+  
+  fireEvent.click(queryByTestId('click-button'));
+  expect(handleOnClick).toBeCalled();
+});
 
-it('render a button success solid', () => {
-    render(<Button
-        buttonStyleSolid="button--success--solid" >
-    </Button>)
-  })
-
-it('render a button sizes large', () => {
-    render(<Button
-        buttonSize="button--large">
-    </Button>)
-  })

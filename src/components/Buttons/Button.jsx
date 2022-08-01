@@ -26,12 +26,13 @@ const sizes = ["button--small", "button--medium", "button--large"];
 
 /* array with available sizes */
 
+
 export const Button = ({
     children,
     type,
-    onClick,
+    handleOnClick,
     buttonStyleSolid,
-    buttonSize
+    buttonSize,
 }) => {
 
     const testButtonStyle = styleButton.includes(buttonStyleSolid) ? buttonStyleSolid : styleButton[0];
@@ -39,8 +40,8 @@ export const Button = ({
     const testButtonSize = sizes.includes(buttonSize) ? buttonSize : sizes[0];
 
     return(
-    <button className={`btn ${testButtonSize} ${testButtonStyle}`} 
-    onClick={onClick} 
+    <button data-testid="click-button" className={`btn ${testButtonSize} ${testButtonStyle}`} 
+    onClick={handleOnClick} 
     type={type}>
         {children}
     </button>
